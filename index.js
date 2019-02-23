@@ -18,3 +18,15 @@ const calculator = {
 
 const plus = calculator.power(4, 2);
 console.log(plus);
+
+//const title = document.getElementById("title");
+const title = document.querySelector("#title");
+title.innerHTML = "hihihi";
+title.style.color = "black";
+document.title = "head";
+
+function handleClick() {
+  title.style.color = "blue";
+}
+
+title.addEventListener("click", handleClick);
