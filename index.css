@@ -16,6 +16,12 @@ body {
 .form,
 .greetings {
   display: none;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
 }
 
 .showing {
@@ -39,4 +45,29 @@ body {
   height: 100%;
   z-index: -1;
   animation: fadeIn 0.5s linear;
+}
+
+.js-weather {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.js-clock {
+  position: absolute;
+  left: 0;
+  top: 20%;
+  width: 100%;
+  text-align: center;
+  font-size: 80px;
+}
+.js-toDoForm {
+  position: absolute;
+  left: 0;
+  top: 60%;
+  width: 100%;
+  text-align: center;
+  font-size: 80px;
 }

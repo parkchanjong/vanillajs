@@ -13,7 +13,19 @@ function getWeather(lat, lng) {
     .then(function(json) {
       const temperature = json.main.temp;
       const place = json.name;
-      weather.innerText = `${temperature} °C  => ${place}`;
+      const icon = json.weather[0].main;
+      const weathercase = {
+        Rain: "🌧️",
+        Clear: "☀️",
+        Thunderstorm: "🌩️",
+        Clouds: "☁️",
+        Snow: "⛄",
+        Drizzle: "",
+        Haze: "🌫️",
+        Mist: "🌁"
+      };
+      weather.innerText = `${temperature} °C  
+       ${place} ${weathercase[icon]}`;
     });
 }
 
