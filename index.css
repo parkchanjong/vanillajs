@@ -71,3 +71,10 @@ body {
   text-align: center;
   font-size: 80px;
 }
+.js-toDoList {
+  list-style-position: inside;
+  position: absolute;
+  left: 45%;
+  top: 70%;
+  font-size: 18px;
+}
